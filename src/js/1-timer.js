@@ -12,6 +12,8 @@ const refs = {
   seconds: document.querySelector('[data-seconds]'),
 };
 
+refs.startButton.disabled = true;
+
 let userSelectedDate = null;
 let countdownId = null;
 
