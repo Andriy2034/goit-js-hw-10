@@ -1,4 +1,73 @@
-.nav-link {
-  font-size: 35px;
-  color: darkgoldenrod;
+.controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+#datetime-picker,
+button {
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #bcccdc;
+  font-size: 16px;
+}
+
+#datetime-picker {
+  flex: 1;
+  padding: 0 16px;
+}
+
+button {
+  min-width: 120px;
+  border: none;
+  color: #fff;
+  background-color: #2f6fed;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #9fb3c8;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(90px, 1fr));
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+.value {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 640px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .timer {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
 }

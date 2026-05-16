@@ -13,8 +13,11 @@
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  gap: 100px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #060c91, #2f6fed);
+  padding: 8px 16px;
 }
 .nav-link {
   position: relative;
@@ -22,6 +25,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   transition: 200ms ease-in;
+  font-size: 45px;
 }
 .nav-link:hover,
 .nav-link:focus {
